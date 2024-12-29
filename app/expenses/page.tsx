@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import { fetchExpenses } from '../lib/api';
+import AddExpenseForm from './add-expense-form';
 
 
-type Expense = {
+export type Expense = {
   _id: string;
   amount: number;
   currency: string;
